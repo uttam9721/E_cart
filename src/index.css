@@ -5,7 +5,7 @@
 .nav_bar{
   display: flex;
   justify-content: space-between;
-  background-color: blue;
+  background-color: rgb(11, 23, 202);
   padding: 10px;
   color: white;
 }
@@ -41,8 +41,8 @@ input::placeholder{
   justify-content: space-between;
   padding: 15px;
   font-weight: bold;
-  background-color: #4b1b78;
-  color: white;
+  background-color: #4e3de7;
+  color: rgb(10, 8, 8);
 
 }
 .img img{
