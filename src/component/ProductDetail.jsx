@@ -33,7 +33,7 @@ const ProductDetail = () => {
           <button className="btn btn-warning mx-2">Add To Cart</button>
         </div>
       </div>
-
+    <h1 className='text-center'>Related Products</h1>
       {/* Render related products */}
       <Product items={relatedProducts} />
     </>

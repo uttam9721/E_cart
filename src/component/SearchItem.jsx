@@ -1,11 +1,23 @@
-import React from 'react'
-// import SearchItem from './../../../../React-Shopping-Cart-YouTube/src/components/SearchItem';
-
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { items } from './Data';
+import Product from './Product';
 const SearchItem = () => {
+  const {term} = useParams();
+  const [filterData, setFilterData] = useState([]);
+
+  useEffect(() => {
+    const filteredData = ()=>{
+      const data = items.filter((p)=>p.title.toLowerCase().includes(term.toLocaleLowerCase()));
+      setFilterData(data)
+    }
+    filteredData();
+   
+  }, [term])
+  
+  // console.log(useParams)
   return (
-    <div>
-      <h1>SearchItem</h1>
-    </div>
+   <Product items={filterData}/>
   )
 }
 

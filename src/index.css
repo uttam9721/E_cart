@@ -57,3 +57,6 @@ input::placeholder{
   gap: 4rem;
 
 }
+.items{
+  cursor: pointer;
+}

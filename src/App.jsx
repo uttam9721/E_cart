@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar  setData={setData} />
         <Routes>
           <Route path='/' element={<Product items={data}/>} />
           <Route path='/product/:id' element={<ProductDetail />} />
